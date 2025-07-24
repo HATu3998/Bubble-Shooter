@@ -144,7 +144,7 @@ Transform:
   m_GameObject: {fileID: 62558335}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.57, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -211,6 +211,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 640269845}
+  - {fileID: 821554173}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &519420028
@@ -486,6 +487,37 @@ MonoBehaviour:
   - {fileID: 7887592538588677447, guid: 0272fa288e4cc544d8b3c82b21cea562, type: 3}
   - {fileID: 2826800147245392602, guid: b964ca43ebd0c54419070c2076039f81, type: 3}
   - {fileID: 975244747892008006, guid: 6ccafa5372cb9534dbc44b4a8373460a, type: 3}
+--- !u!1 &821554172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 821554173}
+  m_Layer: 0
+  m_Name: GameSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &821554173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821554172}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 475429378}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1281944756
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,7 +578,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -5
+  m_SortingOrder: -10
   m_Sprite: {fileID: -2857924017633556779, guid: d67d7ea7a5bda7c42879c97121ec8f80, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -620,8 +652,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba97c986f8c81be4abef9367a8e272eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameShot: {fileID: 443827440}
-  gameReLoad: {fileID: 62558335}
+  BallShot: {fileID: 443827440}
+  BallReLoad: {fileID: 62558335}
 --- !u!1 &2062114585
 GameObject:
   m_ObjectHideFlags: 0
