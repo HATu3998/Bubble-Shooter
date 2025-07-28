@@ -18,4 +18,14 @@ public class BallScript : MonoBehaviour
             transform.Translate(Direction * Time.deltaTime * speed);
         }
     }
+    private void OnTriggerEnter2D(Collider2D col )
+    {
+        if(col.transform.parent ==null && gameObject.transform.parent.name == "BallPool")
+        {
+            col.transform.parent = gameObject.transform.parent;
+            col.GetComponent<BallScript>().Direction = Vector3.zero;
+
+            BallSpawner.Spawner.SoftBall(col.gameObject, gameObject);
+        }
+    }
 }

@@ -16,6 +16,7 @@ public class ShotBall : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             ShootBall();
+            soundController.Instance.PlayFireSound();
         }
     }
     void ChangeBallReLoad()
